@@ -1,0 +1,12 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+img{
+    height: 90vh;
+}
