@@ -1,7 +1,6 @@
-body{
+/* html,body{
     padding: 0;
-    margin: 0;
-}
+} */
 
 .navbar-toggler{
     border: none;
@@ -9,4 +8,31 @@ body{
 
 img{
     height: 90vh;
+}
+
+.col-md-12{
+    padding: 0;
+}
+
+h1{
+    padding: 60px;
+}
+
+.service-card{
+    height: 300px; 
+    border: 1px solid gray;
+}
+
+
+
+@media(max-width:992px){
+    .service-card{
+        margin: 0;
+    }
+}
+
+@media(min-width:992px){
+    .service{
+        padding: 0 100px;
+    }
 }
