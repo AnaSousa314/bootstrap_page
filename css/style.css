@@ -1,33 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* html,body{
+html,body{
     padding: 0;
-} */
+}
 
 body{
     background-color: black;
     font-family: 'Roboto', sans-serif;
-}
-
-.navbar-toggler{
-    border: none;
-}
-
-.black{
-    background-color: black;
-}
-
-img{
-    box-sizing: border-box;
-}
-
-.service-img{
-    padding: 80px;
-}
-
-.col-md-12{
-    padding: 0;
-    
 }
 
 h1{
@@ -38,16 +17,97 @@ h1,h2{
     color: #6C63FF;
 }
 
+img{
+    box-sizing: border-box;
+}
+
+.black{
+    background-color: black;
+}
+
+/* HEADER */
+.navbar-toggler{
+    border: none;
+}
+
+
+
+/* SERVICE */
 
 .service-card{
     height: 100%; 
     border: 1px solid gray;
 }
 
+.service-img{
+    padding: 80px;
+}
 
+.col-md-12{
+    padding: 0;   
+}
+
+/* ABOUT US */
+
+.aboutUs{
+    padding: 90px;
+}
+
+.aboutUs-img{
+    /* padding: 60px; */
+}
+
+.aboutUs-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: white;  
+}
+
+/* CONTACT */
+.contact{
+    padding: 60px;
+}
+
+.contact-form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: white;
+}
+
+.contact-form input{
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.button{
+    margin-top: 1rem;
+}
+
+.button .btn-primary{
+    background-color: #6C63FF;
+    border-color: #6C63FF;
+}
+
+.contact-form textarea{
+    border-radius: 5px;
+}
+
+/* Responsividade */
 
 @media(max-width:992px){
    
+    h2{
+        padding-bottom: 60px;
+    }
+
+    /* Service */
     .service h1{
         padding: 100px;
     }
@@ -57,13 +117,18 @@ h1,h2{
         /* padding: 20px; */
     }
 
+    /* About Us */
+    .aboutUs h1{
+        padding: 20px;
+    }
+}
+
+@media(min-width:992px){
+
     h2{
         padding-bottom: 60px;
     }
 
-}
-
-@media(min-width:992px){
     .service{
         padding:100px;
     }
@@ -72,7 +137,8 @@ h1,h2{
         padding-bottom: 100px;
     } 
 
-    h2{
-        padding-bottom: 60px;
+    /* About Us */
+    .aboutUs-content{
+        padding: 40px;
     }
 }
