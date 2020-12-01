@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root{
+    --principal-color: rgb(92, 225, 230);
+}
+
 html,body{
     padding: 0;
 }
 
 body{
-    background-color: black;
+    background-color: #1c1c1c;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -14,7 +18,11 @@ h1{
 }
 
 h1,h2{
-    color: #6C63FF;
+    color: var(--principal-color);
+}
+
+p,label{
+    color: white;
 }
 
 img{
@@ -22,17 +30,43 @@ img{
 }
 
 .black{
-    background-color: black;
+    background-color: #1c1c1c;
 }
 
 /* HEADER */
+
 .navbar-toggler{
     border: none;
+    
+
 }
 
+.nav-a{
+    font-size: 1.5em;
+}
 
+.nav-a-others{
+    font-size: 1.1em; 
+}
 
 /* SERVICE */
+
+.service-line{
+    border-top: 2px solid var(--principal-color);
+    margin: auto;
+}
+
+.service-line-title{
+    background: #1c1c1c;
+    font-family: 'montserrat', sans-serif;
+    color: var(--principal-color);
+    width: 650px;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    margin-top: -50px;
+    font-weight: bolder;
+}
 
 .service-card{
     height: 100%; 
@@ -40,7 +74,8 @@ img{
 }
 
 .service-img{
-    padding: 80px;
+    padding: 20px;
+    height: 350px;
 }
 
 .col-md-12{
@@ -53,31 +88,24 @@ img{
     padding: 90px;
 }
 
-.aboutUs-img{
-    /* padding: 60px; */
-}
-
 .aboutUs-content{
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    color: white;  
 }
 
 /* CONTACT */
 .contact{
+    height: 100%;
     padding: 60px;
 }
 
 .contact-form{
-    height: 100%;
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    color: white;
 }
 
 .contact-form input{
@@ -91,20 +119,56 @@ img{
 }
 
 .button .btn-primary{
-    background-color: #6C63FF;
-    border-color: #6C63FF;
+    background-color: var(--principal-color);
+    border-color: var(--principal-color);
 }
 
 .contact-form textarea{
     border-radius: 5px;
 }
 
+.contact-telAddress{
+    margin-top: 65px;
+}
+
+.contact-telAddress p{
+    word-spacing: 5px
+}
+
+.contact-telAddress span{
+    color: var(--principal-color);
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+footer div{
+    color: var(--principal-color);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    word-spacing: 7px;
+}
+
+
 /* Responsividade */
 
+
+/* MD */
 @media(max-width:992px){
    
     h2{
         padding-bottom: 60px;
+    }
+
+    /* HEADER */
+
+    .logo{
+        width: 150px;
     }
 
     /* Service */
@@ -112,22 +176,43 @@ img{
         padding: 100px;
     }
 
+    .service-line{
+        border: none;
+    }
+
     .service-card{
         margin: 0;
-        /* padding: 20px; */
     }
 
     /* About Us */
     .aboutUs h1{
-        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .carousel-img{
+        height: 700px;
     }
 }
 
+
+/* LG */
 @media(min-width:992px){
 
     h2{
         padding-bottom: 60px;
     }
+
+    /* HEADER */
+
+    .logo{
+        width: 150px;
+    }
+
+    .nav-a-others{
+        margin-top: 7px;
+    }
+
+    /* SERVICE */
 
     .service{
         padding:100px;
@@ -137,8 +222,15 @@ img{
         padding-bottom: 100px;
     } 
 
-    /* About Us */
+    
+
+    /* ABOUT US */
     .aboutUs-content{
         padding: 40px;
+    }
+
+    /* CONTACT */
+    .contact-telAddress{
+        padding-left: 30px;
     }
 }
